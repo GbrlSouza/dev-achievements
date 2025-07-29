@@ -4,7 +4,7 @@ const badges = [
   { name: 'Bluetooth Hacker', file: 'bluetooth-hacker.png' },
   { name: 'Barbeiro Digital', file: 'barbeiro-digital.png' },
   { name: 'Tijolinho de Framework', file: 'tijolinho-de-framework.png' },
-  { name: 'Oráculo do Caprichoso', file: 'oraculo-do-caprichoso.png' },
+  { name: 'Oráculo do Caprichoso', file: 'oraculo-do-cypress.png' },
   { name: 'Frontend Caprichoso', file: 'frontend-caprichoso.png' },
   { name: 'Truqueiro do Código', file: 'truqueiro-do-codigo.png' }
 ];
