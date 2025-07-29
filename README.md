@@ -1,3 +1,5 @@
+![achievements](https://github.com/GbrlSouza/dev-achievements/blob/main/achievements.png)
+
 # 🏆 Dev Achievements
 
 Uma coleção de conquistas estilizadas para desenvolvedores com alma ousada. 
