@@ -5,79 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conquistas de Dev</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    body {
-      margin: 0;
-      background: #1e1e2f;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #f5c518;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: #aaa;
-      margin-bottom: 2rem;
-    }
-
-    .badge-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .badge-card {
-      background: #292944;
-      padding: 1rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .badge-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(245, 197, 24, 0.3);
-    }
-
-    .badge-img {
-      width: 100%;
-      max-width: 150px;
-    }
-
-    .badge-name {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      color: #fdfdfd;
-    }
-
-    .copy-btn {
-      margin-top: 0.5rem;
-      background: #f5c518;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      color: #1e1e2f;
-      font-weight: bold;
-      font-size: 0.9rem;
-    }
-
-    .copy-btn:hover {
-      background: #ffda4b;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -85,42 +13,9 @@
   <p>Colecione, compartilhe e celebre suas skills de forma divertida.</p>
 
   <div class="badge-grid" id="badgeGrid">
-    <!-- BADGES serão inseridos via JavaScript -->
-  </div>
+    </div>
 
-  <script>
-    const badges = [
-      { name: 'Sábio da Serpente', file: 'sabio-da-serpente.png' },
-      { name: 'Deploy de Sexta', file: 'deploy-de-sexta.png' },
-      { name: 'Bluetooth Hacker', file: 'bluetooth-hacker.png' },
-      { name: 'Barbeiro Digital', file: 'barbeiro-digital.png' },
-      { name: 'Tijolinho de Framework', file: 'tijolinho-de-framework.png' },
-      { name: 'Oráculo do Caprichoso', file: 'oraculo-do-caprichoso.png' },
-      { name: 'Frontend Caprichoso', file: 'frontend-caprichoso.png' },
-      { name: 'Truqueiro do Código', file: 'truqueiro-do-codigo.png' }
-    ];
-
-    const baseUrl = "https://raw.githubusercontent.com/GbrlSouza/dev-achievements/main/badges/";
-
-    const grid = document.getElementById('badgeGrid');
-
-    badges.forEach(badge => {
-      const card = document.createElement('div');
-      card.className = 'badge-card';
-      card.innerHTML = `
-        <img src="${baseUrl}${badge.file}" alt="${badge.name}" class="badge-img">
-        <div class="badge-name">${badge.name}</div>
-        <button class="copy-btn" onclick="copyToClipboard('${baseUrl}${badge.file}')">Copiar Link</button>
-      `;
-      grid.appendChild(card);
-    });
-
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Link copiado para a área de transferência!');
-      });
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
